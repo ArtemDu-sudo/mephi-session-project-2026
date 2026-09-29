@@ -147,3 +147,32 @@
   147  curl http://localhost > ~/curl.out
   148  ls
   149  history > ~/history.out
+  150  curl http://localhost
+  151  clear
+  152  curl http://localhost
+  153  ls
+  154  sudo dnf -y install git
+  155  git clone https://github.com/ArtemDu-sudo/mephi-session-project-2026
+  156  ls
+  157  ls mephi-session-project-2026/
+  158  move *.out mephi-session-project-2026/
+  159  mv *.out mephi-session-project-2026/
+  160  ls
+  161  ls mephi-session-project-2026/
+  162  cd mephi-session-project-2026/
+  163  ls
+  164  git add .
+  165  git commit -m "Complete project"
+  166  git push
+  167  sudo cp /etc/fstab 
+  168  sudo cp /etc/fstab ~/mephi-session-project-2026/
+  169  ls
+  170  sudo cp /etc/passwd ~/mephi-session-project-2026/
+  171  sudo cp /etc/group ~/mephi-session-project-2026/
+  172  sudo cp /etc/security/pwquality.conf ~/mephi-session-project-2026/
+  173  ls
+  174  sudo awk -F: 'BEGIN{OFS=":"} {$2="***"} {print}' /etc/shadow > "~/mephi-session-project-2026/shadow"
+  175  sudo awk -F: 'BEGIN{OFS=":"} {$2="***"} {print}' /etc/shadow > ~/mephi-session-project-2026/shadow
+  176  ls
+  177  cat shadow 
+  178  history > history.out
