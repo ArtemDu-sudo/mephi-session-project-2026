@@ -12,7 +12,7 @@
 | 5.2 | Привилегии | С `tcpdump` снят set-UID бит, вместо него выданы capabilities `cap_net_raw,cap_net_admin=ep` |
 | 5.3 | MAC (SELinux) | Режим `Enforcing`, для `/mephi-web` настроен контекст `httpd_sys_content_t`, `nginx` отдаёт файлы из этого каталога |
 | 6.1 | Ограничение входа | Кураторам (группа `curators`) запрещён локальный вход через PAM (`/etc/pam.d/login`) |
-| 6.2 | Пароли | Срок действия пароля — 90 дней (`PASS_MAX_DAYS` / `chage -M 90`), минимальная длина - 12 символов (`pwquality.conf`) |
+| 6.2 | Пароли | Срок действия пароля - 90 дней (`PASS_MAX_DAYS` / `chage -M 90`), минимальная длина - 12 символов (`pwquality.conf`) |
 | 7 | Тестирование | `index.html` с текстом `Hello from Student: 374773` доступен по `curl http://localhost/` |
 | 8 | Публикация на GitHub | Артефакты и системные файлы загружены в данный репозиторий |
 
